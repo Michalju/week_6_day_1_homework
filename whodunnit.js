@@ -67,22 +67,46 @@
 //#####################################################################################
 
 //Epsiode 5:
-const scenario = {
-    murderer: 'Miss Scarlet',
-    room: 'Kitchen',
-    weapon: 'Candle Stick'
-  };
+// const scenario = {
+//     murderer: 'Miss Scarlet',
+//     room: 'Kitchen',
+//     weapon: 'Candle Stick'
+//   };
   
-  const changeWeapon = function(newWeapon) {
-    scenario.weapon = newWeapon;
-  }
+//   const changeWeapon = function(newWeapon) {
+//     scenario.weapon = newWeapon;
+//   }
   
-  const declareWeapon = function() {
-    return `The weapon is the ${scenario.weapon}.`;
-  }
+//   const declareWeapon = function() {
+//     return `The weapon is the ${scenario.weapon}.`;
+//   }
   
-  changeWeapon('Revolver');
-  const verdict = declareWeapon();
-  console.log(verdict);
+//   changeWeapon('Revolver');
+//   const verdict = declareWeapon();
+//   console.log(verdict);
 //Prediction: presume verdict will be Revolver
+//#####################################################################################
+
+//Epsiode 6:
+let murderer = 'Colonel Mustard';
+
+const changeMurderer = function() {
+  murderer = 'Mr. Green';
+
+  const plotTwist = function() {
+    murderer = 'Mrs. White';
+  }
+
+  plotTwist();
+}
+
+const declareMurderer = function () {
+  return `The murderer is ${murderer}.`;
+}
+
+changeMurderer();
+const verdict = declareMurderer();
+console.log(verdict);
+//Prediction: presume verdict will be Colonel Mustard which is wrong but
+// it make sense why response is Mrs. White
 //#####################################################################################
