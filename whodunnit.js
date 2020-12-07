@@ -88,25 +88,54 @@
 //#####################################################################################
 
 //Epsiode 6:
-let murderer = 'Colonel Mustard';
+// let murderer = 'Colonel Mustard';
+
+// const changeMurderer = function() {
+//   murderer = 'Mr. Green';
+
+//   const plotTwist = function() {
+//     murderer = 'Mrs. White';
+//   }
+
+//   plotTwist();
+// }
+
+// const declareMurderer = function () {
+//   return `The murderer is ${murderer}.`;
+// }
+
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
+//Prediction: presume verdict will be Colonel Mustard which is wrong but
+// it make sense why response is Mrs. White
+//#####################################################################################
+
+//Epsiode 7:
+let murderer = 'Professor Plum';
 
 const changeMurderer = function() {
   murderer = 'Mr. Green';
 
   const plotTwist = function() {
-    murderer = 'Mrs. White';
+    let murderer = 'Colonel Mustard';
+
+    const unexpectedOutcome = function() {
+      murderer = 'Miss Scarlet';
+    }
+
+    unexpectedOutcome();
   }
 
   plotTwist();
 }
 
-const declareMurderer = function () {
+const declareMurderer = function() {
   return `The murderer is ${murderer}.`;
 }
 
 changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
-//Prediction: presume verdict will be Colonel Mustard which is wrong but
-// it make sense why response is Mrs. White
+//Prediction: Miss Scarlet but it makes sense why Mr. Green
 //#####################################################################################
